@@ -52,8 +52,9 @@ shinyUI(pageWithSidebar(
     selectInput('themes', "Plot Theme", c(None = '.', "Tufte", "Economist", "Solarized", "Midnight", "Stata", "Stephen Few", "Wall Street Journal"), selected = "Solarized"),
     
     br(),
-    a(href = "https://fch808.github.com/", "Source code")
-
+    a(href = "https://github.com/FCH808/GapminderHoursWorked/blob/master/server.R", "Source code - Server"),
+    br(),
+    a(href = "https://github.com/FCH808/GapminderHoursWorked/blob/master/ui.R", "Source code - UI")
   )),
   
     mainPanel(
