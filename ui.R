@@ -9,9 +9,9 @@ library(reshape2)
 countries<- fread("hours_per_week.csv", header = TRUE, select = 1)
 setnames(countries,"Working hours per week", "Country")
 
-shinyUI(pageWithSidebar(
+shinyUI(fluidPage(theme = "bootstrap.css",
   
-  headerPanel("Hours worked per Week per Country"),
+  titlePanel("Hours worked per Week per Country"),
   
   sidebarPanel(
 
