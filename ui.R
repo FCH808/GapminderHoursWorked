@@ -52,7 +52,12 @@ shinyUI(fluidPage(theme = "bootstrap.css",
     selectInput('themes', "Plot Theme", c(None = '.', "Tufte", "Economist", "Solarized", "Midnight", "Stata", "Stephen Few", "Wall Street Journal"), selected = "Solarized"),
     
     br(),
-    a(href = "https://gist.github.com/FCH808/eaa18c8095984b923462", "Source code")
+    
+    # Opens slidify html help document in new tab
+    a('Help (Opens new tab)',href='http://fch808.github.io/GapminderHoursWorkedSlidify/#1', target="_blank"),
+    
+    br(),
+    a(href = "https://gist.github.com/FCH808/eaa18c8095984b923462", "Source code (Opens new tab)", target="_blank")
   )),
   
     mainPanel(
